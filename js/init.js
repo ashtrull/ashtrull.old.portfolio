@@ -13,12 +13,20 @@
       $('#full-bio').show()
       $('#bio-button').hide()
       $('#show-less-button').show()
-
     })
+
     $('#work-button').on('click', function () {
       $('.middle').hide()
       $('#kit-cat-go').show()
       $('#hide-button').show()
+    })
+
+    $('#show-less-button').on('click' function () {
+      $('#full-bio').hide()
+    })
+
+    $('#hide-button').on('click', function () {
+      $('#kit-cat-go').hide()
     })
 
   }); // end of document ready
