@@ -1,18 +1,18 @@
-(function($){
-  $(function(){
+(function ($) {
+  $(function () {
 
     $('.button-collapse').sideNav()
     $('.parallax').parallax()
-    $('#full-bio').toggleClass('hidden')
-    $('#kit-cat-go').toggleClass('hidden')
+    $('#full-bio').hide()
+    $('#kit-cat-go').hide()
 
     $('#bio-button').on('click', function () {
-      $('.middle').toggleClass('hidden')
-      $('#full-bio').toggleClass('hidden').append('.row.center')
+      $('.middle').hide()
+      $('#full-bio').show()
     })
     $('#work-button').on('click', function () {
-      $('.middle').toggleClass('hidden')
-      $('#kit-cat-go').toggleClass('hidden')
+      $('.middle').hide()
+      $('#kit-cat-go').show()
     })
 
   }); // end of document ready
