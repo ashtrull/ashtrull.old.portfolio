@@ -5,12 +5,12 @@
     $('.parallax').parallax();
 
     $('#bio-button').on('click', function () {
-      $('.middle').hide()
-      $('#full-bio').append('.row.center')
+      $('.middle')..toggleClass('hidden')
+      $('#full-bio').toggleClass('hidden').append('.row.center')
     })
     $('#work-button').on('click', function () {
-      $('.middle').hide()
-      $('#kit-cat-go').show()
+      $('.middle').toggleClass('hidden')
+      $('#kit-cat-go').toggleClass('hidden')
     })
 
   }); // end of document ready
