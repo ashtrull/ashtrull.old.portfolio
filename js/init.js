@@ -21,13 +21,13 @@
       $('#hide-button').show()
     })
 
-    $('#show-less-button').on('click' function () {
+    $('#show-less-button').on('click', function () {
       $('#full-bio').hide()
     })
 
     $('#hide-button').on('click', function () {
       $('#kit-cat-go').hide()
     })
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+  })
+  // end of document ready
+})(jQuery) // end of jQuery name space
