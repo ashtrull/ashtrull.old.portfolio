@@ -4,7 +4,6 @@
     $('.button-collapse').sideNav()
     $('.parallax').parallax()
     $('#full-bio').hide()
-    $('#kit-cat-go').hide()
     $('#show-less-button').hide()
     $('#hide-button').hide()
 
@@ -19,14 +18,20 @@
       $('.middle').hide()
       $('#kit-cat-go').show()
       $('#hide-button').show()
+      $('#work-button').hide()
     })
 
     $('#show-less-button').on('click', function () {
       $('#full-bio').hide()
+      $('#show-less-button').hide()
+      $('#bio-button').show()
     })
 
     $('#hide-button').on('click', function () {
       $('#kit-cat-go').hide()
+      $('#hide-button').hide()
+      $('#work-button').show()
+
     })
   })
   // end of document ready
