@@ -1,11 +1,13 @@
 (function($){
   $(function(){
 
-    $('.button-collapse').sideNav();
-    $('.parallax').parallax();
+    $('.button-collapse').sideNav()
+    $('.parallax').parallax()
+    $('#full-bio').toggleClass('hidden')
+    $('#kit-cat-go').toggleClass('hidden')
 
     $('#bio-button').on('click', function () {
-      $('.middle')..toggleClass('hidden')
+      $('.middle').toggleClass('hidden')
       $('#full-bio').toggleClass('hidden').append('.row.center')
     })
     $('#work-button').on('click', function () {
